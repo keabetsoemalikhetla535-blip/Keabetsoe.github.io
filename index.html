@@ -1,80 +1,575 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Keabetsoe Malikhetla — IT Support, CCTV Installation, digital skills and creative work from Lesotho.">
-<meta name="author" content="Keabetsoe Malikhetla">
-<title>Keabetsoe Malikhetla | IT Support & Digital Skills</title>
-<style>
-:root{--bg:#08090d;--card:#11131a;--text:#f4f5f7;--muted:#a8adba;--accent:#d7b46a;--line:#242832}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-nav{position:sticky;top:0;z-index:10;background:rgba(8,9,13,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 6%}
-nav a{color:var(--text);text-decoration:none;margin-right:22px;font-size:.92rem}nav a:hover{color:var(--accent)}
-.hero{min-height:88vh;display:flex;align-items:center;padding:80px 8%;background:radial-gradient(circle at 80% 20%,#302715 0,transparent 35%)}
-.hero-inner{max-width:900px}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;text-transform:uppercase}
-h1{font-size:clamp(3rem,9vw,7rem);line-height:.95;margin:18px 0}.hero p{max-width:700px;color:var(--muted);font-size:1.2rem}
-.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 20px;border-radius:999px;border:1px solid var(--accent);color:var(--bg);background:var(--accent);text-decoration:none;font-weight:700}.btn.alt{background:transparent;color:var(--text);border-color:var(--line)}
-section{padding:80px 8%;max-width:1200px;margin:auto}h2{font-size:2.2rem;margin-top:0}.lead{color:var(--muted);max-width:850px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}.card{background:var(--card);border:1px solid var(--line);padding:25px;border-radius:18px}.card h3{margin-top:0;color:var(--accent)}
-.tags{display:flex;flex-wrap:wrap;gap:10px}.tag{border:1px solid var(--line);padding:8px 12px;border-radius:999px;color:#ddd}
-.timeline{border-left:2px solid var(--accent);padding-left:25px}.timeline article{margin-bottom:30px}
-footer{padding:40px 8%;border-top:1px solid var(--line);color:var(--muted);text-align:center}
-.small{color:var(--muted);font-size:.9rem}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Keabetsoe Malikhetla | IT Support Specialist</title>
+
+  <meta name="description" content="Official personal website of Keabetsoe Malikhetla — IT Support, CCTV Installation, digital skills, creative projects and professional interests in Maseru, Lesotho.">
+  <meta name="author" content="Keabetsoe Malikhetla">
+  <meta name="keywords" content="Keabetsoe Malikhetla, IT Support Lesotho, IT Support Specialist Maseru, CCTV Installation Lesotho, computer support, digital skills">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #080808;
+      color: #f5f5f5;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(8, 8, 8, 0.96);
+      border-bottom: 1px solid #292929;
+      padding: 16px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #d6ad55;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 22px;
+    }
+
+    nav a {
+      color: #ddd;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #d6ad55;
+    }
+
+    .hero {
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 70px 7%;
+      background:
+        radial-gradient(circle at top right, #29210e 0%, transparent 35%),
+        linear-gradient(135deg, #080808, #111);
+    }
+
+    .hero-content {
+      max-width: 1100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .tag {
+      color: #d6ad55;
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 88px);
+      line-height: 0.98;
+      margin-bottom: 25px;
+    }
+
+    .gold {
+      color: #d6ad55;
+    }
+
+    .hero p {
+      color: #bdbdbd;
+      font-size: 18px;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 13px 22px;
+      border-radius: 30px;
+      border: 1px solid #d6ad55;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #d6ad55;
+      color: #080808;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
+
+    .photo-container {
+      width: 330px;
+      height: 430px;
+      flex-shrink: 0;
+      border: 2px solid #d6ad55;
+      border-radius: 20px;
+      padding: 8px;
+      background: #111;
+      box-shadow: 0 0 35px rgba(214, 173, 85, 0.15);
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+
+    section {
+      padding: 90px 7%;
+    }
+
+    .section-title {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .section-title h2 span {
+      color: #d6ad55;
+    }
+
+    .section-title > p {
+      color: #aaa;
+      margin-bottom: 35px;
+    }
+
+    .about-text {
+      max-width: 900px;
+      color: #ccc;
+      font-size: 17px;
+    }
+
+    .cards {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #292929;
+      border-radius: 16px;
+      padding: 28px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #d6ad55;
+    }
+
+    .card h3 {
+      color: #d6ad55;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #aaa;
+      font-size: 15px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .skill {
+      border: 1px solid #3a3a3a;
+      padding: 9px 15px;
+      border-radius: 20px;
+      color: #ddd;
+      font-size: 14px;
+      background: #101010;
+    }
+
+    .feature {
+      max-width: 1000px;
+      margin: auto;
+      background: linear-gradient(135deg, #121212, #0b0b0b);
+      border: 1px solid #292929;
+      border-radius: 20px;
+      padding: 40px;
+    }
+
+    .feature h3 {
+      color: #d6ad55;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .feature p {
+      color: #bbb;
+    }
+
+    .quote {
+      border-left: 3px solid #d6ad55;
+      padding-left: 20px;
+      margin-top: 25px;
+      color: #ddd;
+      font-style: italic;
+    }
+
+    .contact-box {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      padding: 50px 25px;
+      background: #111;
+      border-radius: 20px;
+      border: 1px solid #292929;
+    }
+
+    .contact-box p {
+      color: #aaa;
+      margin: 10px auto 25px;
+      max-width: 650px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      border-top: 1px solid #222;
+      color: #777;
+      font-size: 14px;
+    }
+
+    footer span {
+      color: #d6ad55;
+    }
+
+    @media (max-width: 800px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+
+      .photo-container {
+        width: 270px;
+        height: 350px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 6%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#work">Work</a>
-  <a href="#creative">Creative</a>
-  <a href="#faith">Faith</a>
-  <a href="#contact">Contact</a>
-</nav>
 
-<header class="hero">
-  <div class="hero-inner">
-    <div class="eyebrow">Lesotho • Technology • Creativity</div>
-    <h1>Keabetsoe<br>Malikhеtla</h1>
-    <p>IT Support specialist, CCTV installation learner/practitioner, digital creator and lifelong learner building a professional presence from Maseru, Lesotho.</p>
-    <div class="buttons">
-      <a class="btn" href="#about">Explore my story</a>
-      <a class="btn alt" href="#contact">Get in touch</a>
+  <nav>
+    <div class="logo">KM.</div>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#creative">Creative</a></li>
+      <li><a href="#faith">Faith</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+
+      <div class="hero-text">
+        <div class="tag">IT Support • Digital • Creative</div>
+
+        <h1>
+          Keabetsoe<br>
+          <span class="gold">Malikhetla</span>
+        </h1>
+
+        <p>
+          IT Support professional from Maseru, Lesotho, with an interest
+          in technology, CCTV installation, digital creativity and building
+          meaningful things online.
+        </p>
+
+        <div class="buttons">
+          <a href="#about" class="btn btn-primary">Explore My Story</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="photo-container">
+        <img src="profile.jpg" alt="Keabetsoe Malikhetla">
+      </div>
+
     </div>
-  </div>
-</header>
+  </header>
 
-<section id="about">
-<h2>About Me</h2>
-<p class="lead">
-I am Keabetsoe Malikhetla, based in Maseru, Lesotho. My background is in IT Support, with a strong interest in computers, practical technology, digital work and helping people solve technical problems. I have completed IT Support studies at an IT Center and hold an IT Support certificate.
-</p>
-<p class="lead">
-I am also interested in CCTV installation, social media marketing and content creation. I am building my skills step by step and looking for opportunities where I can use technology, communication and creativity in practical ways.
-</p>
-</section>
+  <section id="about">
+    <div class="section-title">
+      <h2>About <span>Me</span></h2>
 
-<section id="skills">
-<h2>Skills & Interests</h2>
-<div class="grid">
-  <div class="card"><h3>IT Support</h3><p>Computer troubleshooting, user support, basic setup and practical problem solving.</p></div>
-  <div class="card"><h3>Microsoft Applications</h3><p>Strong familiarity with Microsoft applications and everyday computer workflows.</p></div>
-  <div class="card"><h3>CCTV Installation</h3><p>Interested in and developing practical CCTV installation and security-system skills.</p></div>
-  <div class="card"><h3>Social Media</h3><p>Social media marketing, audience engagement and content-focused communication.</p></div>
-  <div class="card"><h3>Content Creation</h3><p>Creating relatable text-based content around Lesotho life, youth issues and everyday experiences.</p></div>
-  <div class="card"><h3>Forex Learning</h3><p>Learning forex trading and market concepts, including technical analysis and trading platforms.</p></div>
-</div>
-</section>
+      <p>
+        A little about the person behind the screen.
+      </p>
 
-<section id="work">
-<h2>Professional Profile</h2>
-<div class="timeline">
-<article><h3>IT Support</h3><p>Completed IT Support studies at an IT Center and earned an IT Support certificate.</p></article>
-<article><h3>CCTV & Technology</h3><p>Developing practical technology skills with an interest in CCTV installation and computer-related services.</p></article>
-<article><h3>Digital & Social Media</h3><p>Interested in social media marketing and building online audiences through relatable, human content.</p></article>
-</div>
-</section>
+      <div class="about-text">
+        <p>
+          My name is <strong>Keabetsoe Malikhetla</strong>, and I am based
+          in Maseru, Lesotho. I have a background in IT Support and have
+          completed my IT Support studies at an IT Center.
+        </p>
 
-<
-  <
+        <br>
+
+        <p>
+          I enjoy working with computers, solving technical problems,
+          learning new technology and exploring ways technology can be
+          used to create opportunities.
+        </p>
+
+        <br>
+
+        <p>
+          Beyond technology, I have a creative side that includes content
+          creation, social media ideas, storytelling and developing unique
+          concepts.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-title">
+      <h2>Skills & <span>Professional Interests</span></h2>
+
+      <p>
+        Areas I'm building my knowledge and experience in.
+      </p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>💻 IT Support</h3>
+        <p>
+          Computer troubleshooting, technical support, software assistance
+          and general IT problem solving.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>📹 CCTV Installation</h3>
+        <p>
+          Interest and practical involvement in CCTV installation,
+          surveillance systems and security technology.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>📱 Digital Skills</h3>
+        <p>
+          Microsoft applications, social media, digital platforms and
+          technology-based creative work.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="section-title">
+      <div class="skills">
+        <div class="skill">IT Support</div>
+        <div class="skill">Computer Troubleshooting</div>
+        <div class="skill">Microsoft Applications</div>
+        <div class="skill">CCTV Installation</div>
+        <div class="skill">Social Media Marketing</div>
+        <div class="skill">Content Creation</div>
+        <div class="skill">Digital Creativity</div>
+        <div class="skill">Forex Learning</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="creative">
+    <div class="section-title">
+      <h2>My <span>Creative Side</span></h2>
+
+      <p>
+        Technology isn't the only thing that interests me.
+      </p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🎙️ Hot Seat Podcast</h3>
+        <p>
+          A podcast concept focused on the painful, funny, difficult and
+          happiest experiences people go through in life.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🎭 Grand Veil</h3>
+        <p>
+          A creative identity built around mystery, personality,
+          storytelling and a distinctive online presence.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🇱🇸 Lesotho Content</h3>
+        <p>
+          I enjoy creating ideas around Lesotho life, young people,
+          everyday struggles, culture and Gen-Z experiences.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="faith">
+    <div class="section-title">
+      <h2>Faith & <span>Values</span></h2>
+
+      <p>
+        Faith is an important part of who I am.
+      </p>
+    </div>
+
+    <div class="feature">
+
+      <h3>✝️ Christian Faith</h3>
+
+      <p>
+        I am a Christian and I value growing in faith, trusting God,
+        prayer, love, unity and spiritual growth.
+      </p>
+
+      <div class="quote">
+        “Trust in the Lord with all your heart and lean not on your own
+        understanding.”
+        <br><br>
+        — Proverbs 3:5
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <h2>What I'm <span>Building</span></h2>
+
+      <p>
+        My journey is still being written.
+      </p>
+    </div>
+
+    <div class="feature">
+
+      <h3>🚀 Learning. Creating. Growing.</h3>
+
+      <p>
+        I'm continuing to develop my IT skills, learn more about
+        technology and explore opportunities where digital skills,
+        creativity and problem solving can come together.
+      </p>
+
+      <div class="quote">
+        This website is part of that journey.
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-box">
+
+      <h2>Let's <span class="gold">Connect</span></h2>
+
+      <p>
+        For professional opportunities, IT-related work, creative
+        collaborations or simply connecting, feel free to reach out.
+      </p>
+
+      <a href="mailto:your-email@example.com" class="btn btn-primary">
+        Email Me
+      </a>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 <span>Keabetsoe Malikhetla</span> · Maseru, Lesotho
+  </footer>
+
+</body>
+  </html>
