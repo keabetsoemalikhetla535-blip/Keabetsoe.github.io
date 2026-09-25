@@ -6,9 +6,9 @@
 
   <title>Keabetsoe Malikhetla | IT Support Specialist</title>
 
-  <meta name="description" content="Official personal website of Keabetsoe Malikhetla — IT Support, CCTV Installation, digital skills, creative projects and professional interests in Maseru, Lesotho.">
+  <meta name="description" content="Official website of Keabetsoe Malikhetla — IT Support, CCTV Installation, digital skills, creative projects and professional interests in Maseru, Lesotho.">
   <meta name="author" content="Keabetsoe Malikhetla">
-  <meta name="keywords" content="Keabetsoe Malikhetla, IT Support Lesotho, IT Support Specialist Maseru, CCTV Installation Lesotho, computer support, digital skills">
+  <meta name="keywords" content="Keabetsoe Malikhetla, IT Support Lesotho, IT Support Maseru, CCTV Installation Lesotho, computer support, digital skills">
 
   <style>
     * {
@@ -34,7 +34,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(8, 8, 8, 0.96);
+      background: rgba(8, 8, 8, 0.97);
       border-bottom: 1px solid #292929;
       padding: 16px 6%;
       display: flex;
@@ -44,9 +44,9 @@
 
     .logo {
       color: #d6ad55;
-      font-size: 20px;
+      font-size: 21px;
       font-weight: bold;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
     }
 
     nav ul {
@@ -121,6 +121,7 @@
     }
 
     .btn {
+      display: inline-block;
       padding: 13px 22px;
       border-radius: 30px;
       border: 1px solid #d6ad55;
@@ -217,10 +218,11 @@
     }
 
     .skills {
+      max-width: 1000px;
+      margin: 30px auto 0;
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-top: 25px;
     }
 
     .skill {
@@ -269,10 +271,59 @@
       border: 1px solid #292929;
     }
 
-    .contact-box p {
+    .contact-box > p {
       color: #aaa;
       margin: 10px auto 25px;
-      max-width: 650px;
+      max-width: 700px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      max-width: 750px;
+      margin: 30px auto;
+    }
+
+    .contact-item {
+      background: #0b0b0b;
+      border: 1px solid #292929;
+      border-radius: 14px;
+      padding: 18px;
+      text-align: left;
+      transition: 0.3s;
+    }
+
+    .contact-item:hover {
+      border-color: #d6ad55;
+      transform: translateY(-3px);
+    }
+
+    .contact-item small {
+      display: block;
+      color: #777;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 11px;
+    }
+
+    .contact-item a {
+      color: #d6ad55;
+      word-break: break-word;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .location {
+      color: #aaa;
+      margin-top: 25px;
     }
 
     footer {
@@ -288,6 +339,7 @@
     }
 
     @media (max-width: 800px) {
+
       nav {
         flex-direction: column;
         gap: 12px;
@@ -322,8 +374,16 @@
         grid-template-columns: 1fr;
       }
 
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
       section {
         padding: 65px 6%;
+      }
+
+      h1 {
+        font-size: 55px;
       }
     }
   </style>
@@ -331,6 +391,7 @@
 
 <body>
 
+  <!-- NAVIGATION -->
   <nav>
     <div class="logo">KM.</div>
 
@@ -343,11 +404,16 @@
     </ul>
   </nav>
 
+
+  <!-- HERO -->
   <header class="hero">
     <div class="hero-content">
 
       <div class="hero-text">
-        <div class="tag">IT Support • Digital • Creative</div>
+
+        <div class="tag">
+          IT Support • CCTV • Digital • Creative
+        </div>
 
         <h1>
           Keabetsoe<br>
@@ -356,14 +422,20 @@
 
         <p>
           IT Support professional from Maseru, Lesotho, with an interest
-          in technology, CCTV installation, digital creativity and building
-          meaningful things online.
+          in technology, CCTV installation, digital creativity and
+          building meaningful things online.
         </p>
 
         <div class="buttons">
-          <a href="#about" class="btn btn-primary">Explore My Story</a>
-          <a href="#contact" class="btn">Contact Me</a>
+          <a href="#about" class="btn btn-primary">
+            Explore My Story
+          </a>
+
+          <a href="#contact" class="btn">
+            Contact Me
+          </a>
         </div>
+
       </div>
 
       <div class="photo-container">
@@ -373,19 +445,26 @@
     </div>
   </header>
 
+
+  <!-- ABOUT -->
   <section id="about">
+
     <div class="section-title">
-      <h2>About <span>Me</span></h2>
+
+      <h2>
+        About <span>Me</span>
+      </h2>
 
       <p>
         A little about the person behind the screen.
       </p>
 
       <div class="about-text">
+
         <p>
-          My name is <strong>Keabetsoe Malikhetla</strong>, and I am based
-          in Maseru, Lesotho. I have a background in IT Support and have
-          completed my IT Support studies at an IT Center.
+          My name is <strong>Keabetsoe Malikhetla</strong>, and I am
+          based in Maseru, Lesotho. I have a background in IT Support
+          and have completed my IT Support studies at an IT Center.
         </p>
 
         <br>
@@ -399,111 +478,157 @@
         <br>
 
         <p>
-          Beyond technology, I have a creative side that includes content
-          creation, social media ideas, storytelling and developing unique
-          concepts.
+          Beyond technology, I have a creative side that includes
+          content creation, social media ideas, storytelling and
+          developing unique concepts.
         </p>
+
       </div>
+
     </div>
+
   </section>
 
+
+  <!-- SKILLS -->
   <section id="skills">
+
     <div class="section-title">
-      <h2>Skills & <span>Professional Interests</span></h2>
+
+      <h2>
+        Skills & <span>Professional Interests</span>
+      </h2>
 
       <p>
         Areas I'm building my knowledge and experience in.
       </p>
+
     </div>
+
 
     <div class="cards">
 
       <div class="card">
         <h3>💻 IT Support</h3>
+
         <p>
-          Computer troubleshooting, technical support, software assistance
-          and general IT problem solving.
+          Computer troubleshooting, technical support, software
+          assistance and general IT problem solving.
         </p>
       </div>
 
+
       <div class="card">
         <h3>📹 CCTV Installation</h3>
+
         <p>
           Interest and practical involvement in CCTV installation,
           surveillance systems and security technology.
         </p>
       </div>
 
+
       <div class="card">
         <h3>📱 Digital Skills</h3>
+
         <p>
-          Microsoft applications, social media, digital platforms and
-          technology-based creative work.
+          Microsoft applications, social media, digital platforms
+          and technology-based creative work.
         </p>
       </div>
 
     </div>
 
-    <div class="section-title">
-      <div class="skills">
-        <div class="skill">IT Support</div>
-        <div class="skill">Computer Troubleshooting</div>
-        <div class="skill">Microsoft Applications</div>
-        <div class="skill">CCTV Installation</div>
-        <div class="skill">Social Media Marketing</div>
-        <div class="skill">Content Creation</div>
-        <div class="skill">Digital Creativity</div>
-        <div class="skill">Forex Learning</div>
-      </div>
+
+    <div class="skills">
+
+      <div class="skill">IT Support</div>
+      <div class="skill">Computer Troubleshooting</div>
+      <div class="skill">Microsoft Applications</div>
+      <div class="skill">CCTV Installation</div>
+      <div class="skill">Social Media Marketing</div>
+      <div class="skill">Content Creation</div>
+      <div class="skill">Digital Creativity</div>
+      <div class="skill">Forex Learning</div>
+
     </div>
+
   </section>
 
+
+  <!-- CREATIVE -->
   <section id="creative">
+
     <div class="section-title">
-      <h2>My <span>Creative Side</span></h2>
+
+      <h2>
+        My <span>Creative Side</span>
+      </h2>
 
       <p>
         Technology isn't the only thing that interests me.
       </p>
+
     </div>
+
 
     <div class="cards">
 
       <div class="card">
+
         <h3>🎙️ Hot Seat Podcast</h3>
+
         <p>
-          A podcast concept focused on the painful, funny, difficult and
-          happiest experiences people go through in life.
+          A podcast concept focused on the painful, funny, difficult
+          and happiest experiences people go through in life.
         </p>
+
       </div>
 
+
       <div class="card">
+
         <h3>🎭 Grand Veil</h3>
+
         <p>
           A creative identity built around mystery, personality,
           storytelling and a distinctive online presence.
         </p>
+
       </div>
 
+
       <div class="card">
+
         <h3>🇱🇸 Lesotho Content</h3>
+
         <p>
           I enjoy creating ideas around Lesotho life, young people,
           everyday struggles, culture and Gen-Z experiences.
         </p>
+
       </div>
 
     </div>
+
   </section>
 
+
+  <!-- FAITH -->
   <section id="faith">
+
     <div class="section-title">
-      <h2>Faith & <span>Values</span></h2>
+
+      <h2>
+        Faith & <span>Values</span>
+      </h2>
 
       <p>
         Faith is an important part of who I am.
       </p>
+
     </div>
+
 
     <div class="feature">
 
@@ -515,23 +640,32 @@
       </p>
 
       <div class="quote">
-        “Trust in the Lord with all your heart and lean not on your own
-        understanding.”
+        “Trust in the Lord with all your heart and lean not on your
+        own understanding.”
         <br><br>
         — Proverbs 3:5
       </div>
 
     </div>
+
   </section>
 
+
+  <!-- WHAT I'M BUILDING -->
   <section>
+
     <div class="section-title">
-      <h2>What I'm <span>Building</span></h2>
+
+      <h2>
+        What I'm <span>Building</span>
+      </h2>
 
       <p>
         My journey is still being written.
       </p>
+
     </div>
+
 
     <div class="feature">
 
@@ -548,28 +682,168 @@
       </div>
 
     </div>
+
   </section>
 
+
+  <!-- CONTACT -->
   <section id="contact">
+
     <div class="contact-box">
 
-      <h2>Let's <span class="gold">Connect</span></h2>
+      <h2>
+        Let's <span class="gold">Connect</span>
+      </h2>
 
       <p>
-        For professional opportunities, IT-related work, creative
-        collaborations or simply connecting, feel free to reach out.
+        Available for IT Support, CCTV-related work, digital projects,
+        creative collaborations and professional opportunities.
       </p>
 
-      <a href="mailto:your-email@example.com" class="btn btn-primary">
-        Email Me
-      </a>
+
+      <div class="contact-grid">
+
+        <!-- PHONE 1 -->
+        <div class="contact-item">
+
+          <small>Phone</small>
+
+          <a href="tel:+26663378583">
+            +266 6337 8583
+          </a>
+
+        </div>
+
+
+        <!-- PHONE 2 -->
+        <div class="contact-item">
+
+          <small>Phone</small>
+
+          <a href="tel:+26656071702">
+            +266 5607 1702
+          </a>
+
+        </div>
+
+
+        <!-- WHATSAPP -->
+        <div class="contact-item">
+
+          <small>WhatsApp</small>
+
+          <a href="https://wa.me/26656071702" target="_blank">
+            +266 5607 1702
+          </a>
+
+        </div>
+
+
+        <!-- EMAIL -->
+        <div class="contact-item">
+
+          <small>Email</small>
+
+          <a href="mailto:keabetsoemalikhetla535@gmail.com">
+            keabetsoemalikhetla535@gmail.com
+          </a>
+
+        </div>
+
+
+        <!-- FACEBOOK -->
+        <div class="contact-item">
+
+          <small>Facebook</small>
+
+          <a href="https://www.facebook.com/profile.php?id=61593016647486"
+             target="_blank">
+
+            Thabelang T. Jnr
+
+          </a>
+
+        </div>
+
+
+        <!-- INSTAGRAM -->
+        <div class="contact-item">
+
+          <small>Instagram</small>
+
+          <a href="https://www.instagram.com/thabelang.jnr1/"
+             target="_blank">
+
+            @thabelang.jnr1
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- CONTACT BUTTONS -->
+      <div class="contact-buttons">
+
+        <a
+          href="https://wa.me/26656071702"
+          target="_blank"
+          class="btn btn-primary">
+
+          💬 WhatsApp Me
+
+        </a>
+
+
+        <a
+          href="mailto:keabetsoemalikhetla535@gmail.com"
+          class="btn">
+
+          📧 Send Me an Email
+
+        </a>
+
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61593016647486"
+          target="_blank"
+          class="btn">
+
+          📘 Facebook
+
+        </a>
+
+
+        <a
+          href="https://www.instagram.com/thabelang.jnr1/"
+          target="_blank"
+          class="btn">
+
+          📸 Instagram
+
+        </a>
+
+      </div>
+
+
+      <div class="location">
+        📍 Maseru, Lesotho
+      </div>
 
     </div>
+
   </section>
 
+
+  <!-- FOOTER -->
   <footer>
-    © 2026 <span>Keabetsoe Malikhetla</span> · Maseru, Lesotho
+
+    © 2026
+    <span>Keabetsoe Malikhetla</span>
+    · Maseru, Lesotho
+
   </footer>
 
 </body>
-  </html>
+    </html>
